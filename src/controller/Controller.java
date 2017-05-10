@@ -10,14 +10,18 @@ public class Controller
 	private Stack<Plates> Plates;
 	private Queue<Customer> Customer;
 	
-	public void Plates()
+	public void Plates(Stack plate, int all)
 	{
-		
+		plate.push(new Integer(all));
+		plate.pop();
+		plate.peek();
 	}
 	
 	public void Customer()
 	{
 		Customer = new LinkedList<Customer>();
+		Customer.addAll(Customer);
+		Customer.remove();
 	}
 	
 	public void start()
